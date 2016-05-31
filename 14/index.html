@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+		寂寞也是一种享受
+	</title>
+	<link rel="stylesheet" href="">
+	<style>
+	body {
+        font: 600 14px/24px Arial;
+        margin: 12px;
+    }
+
+    .card-container {
+        cursor: pointer;
+        height: 300px;
+        perspective: 200;
+        position: relative;
+        width: 400px;
+    }
+
+    .card {
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+
+    .side {
+        backface-visibility: hidden;
+        border-radius: 6px;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .back {
+        background: #eaeaed;
+        color: #0087cc;
+        font-size:40px;
+        line-height: 300px;
+        text-align: center;
+        transform: rotateY(180deg);
+    }
+    </style>
+	</style>
+</head>
+<body>
+<h1>寂寞也是一种享受</h1>
+<div class="card-container">
+   <div class="card">
+	 <div class="side"><img src="img/mid.gif" alt="寂寞也是一种享受"></div>
+	 <div class="side back">寂寞也是一种享受</div>
+   </div>
+</div>
+	
+</body>
+</html>
